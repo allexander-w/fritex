@@ -1,0 +1,1 @@
+"use strict";$(document).ready(function(){function c(){$(".popup-wrapper").addClass("dn")}$(".vacancies__btn").click(function(){var c;c=this,$(".popup-wrapper").removeClass("dn"),$("#vacancy").attr({value:$(c).attr("data-vacancy")})}),$(".popup__close").click(function(){c()}),$(".popup-wrapper").click(function(){c()}).children().click(function(c){return c.stopPropagation,!1})});
