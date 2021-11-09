@@ -1,18 +1,16 @@
-
-
 $(document).ready(function(){
 
 	function close() {
 		$(".popup-wrapper").addClass("dn")
 	}
 
-	function open(vm) {
+	function open() {
 		$(".popup-wrapper").removeClass("dn")
-		$("#vacancy").attr({"value": $(vm).attr("data-vacancy")})
 	}
 
 	$(".vacancies__btn").click(function() {
-		open(this)
+		open()
+		$("#vacancy").attr({"value": $(this).attr("data-vacancy")})
 	})
 	$(".popup__close").click(function() {
 		close()
@@ -22,6 +20,10 @@ $(document).ready(function(){
 	}).children().click(function(e) {
 		e.stopPropagation
 		return false
+	})
+
+	$(".clients__block").click(function() {
+		open()
 	})
 
 

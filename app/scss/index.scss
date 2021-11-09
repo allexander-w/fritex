@@ -811,6 +811,23 @@ p {
   margin-bottom: 120px;
 }
 
+.clients__product-item {
+  margin-bottom: 20px;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  a {
+    font-family: SFPro;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #000;
+  }
+}
+
 .heading-36 {
   font-family: ProximaNova;
   font-weight: normal;
@@ -862,6 +879,7 @@ p {
   align-items: center;
   border: 1px solid #E5E5E5;
   height: 160px;
+  cursor: pointer ;
 
   background-color: #fff;
 }
@@ -1234,6 +1252,8 @@ ul.list {
   top: 0;
   bottom: 0;
   padding: 60px;
+
+  z-index: 9999;
 }
 
 .popup {
@@ -1242,6 +1262,7 @@ ul.list {
   width: 729px;
   padding: 60px;
   margin: 60px;
+  z-index: 99999;
 
   margin: 0 auto;
 }
@@ -1363,5 +1384,11 @@ ul.list {
 .popup__close::after {
     transform: rotate(-45deg);
 }
+
+
+.clients.popup {
+  width: 902px;
+}
+
 
 @import "./_media.scss";
