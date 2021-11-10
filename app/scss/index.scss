@@ -148,6 +148,10 @@ p {
 	display: none;
 }
 
+.c-pointer {
+	cursor: pointer;
+}
+
 /* Indetns */
 
 @for $i from 1 through 150 {
@@ -335,8 +339,8 @@ p {
 
 .complectation__block {
   position: relative;
-  max-width: 772px;
   height: 480px;
+  overflow: hidden;
 
   img {
     position: absolute;
@@ -1394,5 +1398,27 @@ ul.list {
 	margin-right: 158px;
 }
 
+.header__burger {
+	position: relative;
+	width: 30px;
+}
+
+.header__burger span, .header__burger:after, .header__burger:before{
+    height: 2px;
+    width: 30px;
+    position: absolute;
+    background: #000;
+    margin: 0 auto;
+}
+
+.header__burger:after, .header__burger:before{
+    content: '';
+}
+.header__burger:after{
+    bottom: 6px;
+}
+.header__burger:before{
+    top: 8px;
+}
 
 @import "./_media.scss";
