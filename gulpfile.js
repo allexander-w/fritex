@@ -64,6 +64,9 @@ const build = async cb => {
 	src('./app/img/**/*.*')
 		.pipe(dest('./dist/img'))
 
+	src('./app/vendor/**/*.*')
+		.pipe(dest('./dist/vendor'))
+
 	src('./app/fonts/*.*')
 		.pipe(dest('./dist/fonts'))
 
