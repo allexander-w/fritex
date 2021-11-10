@@ -19,8 +19,40 @@
 </head>
 <body>
 
+	<!-- ======= Задать вопрос попап ======= -->
+    <div class="popup-wrapper dn" id="question-modal">
+        <div class="popup">
+            <h3 class="heading-36 mb-60">Задать вопрос</h3>
+
+            <form action="#">
+				<div class="popup__close"></div>
+
+                <div class="main-input mb-30">
+                    <input class="main-input__self" placeholder="ФИО" type="text">
+                    <p class="main-input__error-msg">message</p>
+                </div>
+
+                <div class="main-input mb-30">
+                    <input class="main-input__self" placeholder="Эл.почта" type="text">
+                    <p class="main-input__error-msg">message</p>
+                </div>
+
+                <div class="main-input mb-30">
+                    <input class="main-input__self" placeholder="Телефон" type="text">
+                    <p class="main-input__error-msg">message</p>
+                </div>
+
+                <textarea class="main-textarea__self mb-30" placeholder="Напишите в этом поле любую дополнительную информацию" type="text"></textarea>
+
+                <p class="text-20 mb-30">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных</p>
+
+				<button type="submit" class="btn black-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
     <!-- ======= Откликнуться на вакансию попап ======= -->
-    <div class="popup-wrapper dn">
+    <div id="clients-modal" class="popup-wrapper dn">
         <div class="clients popup">
 
             <img src="./img/clients/1.png" class="mb-56" alt="">
@@ -43,7 +75,7 @@
             </div>
                 
         </div>
-    </div>в
+    </div>
 
     <!-- ======= Шапка сайта ======= -->
     <header class="header">
@@ -77,34 +109,38 @@
             </p>
 
             <div class="clients__blocks">
-                <div class="clients__block"> <img src="./img/clients/1.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/2.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/3.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/4.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/5.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/6.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/7.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/8.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/1.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/2.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/3.png" alt=""> </div>
-                <div class="clients__block"> <img src="./img/clients/4.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/1.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/2.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/3.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/4.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/5.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/6.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/7.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/8.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/1.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/2.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/3.png" alt=""> </div>
+                <div data-modal="clients-modal" class="trigger clients__block"> <img src="./img/clients/4.png" alt=""> </div>
             </div>
 
         </div>
     </section>
 
     <!-- ======= Футер сайта ======= -->
-    <footer class="footer">
+    <footer class="footer mt-120">
         <div class="container footer__container flex jc-between ai-center">
-            <p>© 2021 «Фритекс»</p>
-            <button class="btn footer__btn">Задать вопрос</button>
-            <a href="#"> Политика конфиденциальности </a>
-            <a href="#"> ENGLISH VERSION </a>
-            <div class="footer__social flex ai-center">
-               <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
-               <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
-            </div>
+			<div class="flex ai-center jc-between footer__left">
+				<p>© 2021 «Фритекс»</p>
+				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
+				<a href="#"> Политика конфиденциальности </a>
+				<a href="#"> ENGLISH VERSION </a>
+				<div class="footer__social flex ai-center">
+				<a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+				<a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+				</div>
+			</div>
+            
+			<p>Разработка: ovchenkova | digital</p>
         </div>
     </footer>
 

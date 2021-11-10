@@ -4,14 +4,10 @@ $(document).ready(function(){
 		$(".popup-wrapper").addClass("dn")
 	}
 
-	function open() {
-		$(".popup-wrapper").removeClass("dn")
+	function open( vm ) {
+		$(vm).removeClass("dn")
 	}
 
-	$(".vacancies__btn").click(function() {
-		open()
-		$("#vacancy").attr({"value": $(this).attr("data-vacancy")})
-	})
 	$(".popup__close").click(function() {
 		close()
 	})
@@ -22,8 +18,9 @@ $(document).ready(function(){
 		return false
 	})
 
-	$(".clients__block").click(function() {
-		open()
+	$("body").on("click", ".trigger", function(e) {
+		e.preventDefault()
+		open( $(`#${ $(this).attr("data-modal") }`) )
 	})
 
 

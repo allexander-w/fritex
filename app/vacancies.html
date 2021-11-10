@@ -19,8 +19,8 @@
 </head>
 <body>
 
-    <!-- ======= Откликнуться на вакансию попап ======= -->
-    <div class="popup-wrapper">
+    <!-- ======= Задать вопрос попап ======= -->
+    <div class="popup-wrapper dn" id="question-modal">
         <div class="popup">
             <h3 class="heading-36 mb-60">Задать вопрос</h3>
 
@@ -52,7 +52,7 @@
     </div>
 
     <!-- ======= Откликнуться на вакансию попап ======= -->
-    <div class="popup-wrapper dn">
+    <div class="popup-wrapper dn" id="vacancies-modal">
         <div class="popup">
             <h3 class="heading-36 mb-60">Заполните анкету</h3>
 
@@ -199,7 +199,7 @@
                                 <li class="list__item">выплачивается дотация на питание (столовая на территории предприятия).</li>
                             </ul>
                                 
-                            <button data-vacancy="Транспортировщик (водитель электропогрузчика)" class="btn mt-60 ml-21 vacancies__btn">откликнуться</button>
+                            <button data-modal="vacancies-modal" data-vacancy="Транспортировщик (водитель электропогрузчика)" class="btn mt-60 ml-21 vacancies__btn trigger">откликнуться</button>
                                 
                         </div>
                     </div>
@@ -228,7 +228,7 @@
                                 +7 4852 30-18-34<br>
                             </p>
 
-                            <button data-vacancy="Генеральный директор" class="btn mt-60 ml-21 vacancies__btn">откликнуться</button>
+                            <button data-modal="vacancies-modal" data-vacancy="Генеральный директор" class="btn mt-60 ml-21 vacancies__btn trigger">откликнуться</button>
                         </div>
                     </div>
 
@@ -241,14 +241,18 @@
     <!-- ======= Футер сайта ======= -->
     <footer class="footer mt-120">
         <div class="container footer__container flex jc-between ai-center">
-            <p>© 2021 «Фритекс»</p>
-            <button class="btn footer__btn">Задать вопрос</button>
-            <a href="#"> Политика конфиденциальности </a>
-            <a href="#"> ENGLISH VERSION </a>
-            <div class="footer__social flex ai-center">
-               <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
-               <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
-            </div>
+			<div class="flex ai-center jc-between footer__left">
+				<p>© 2021 «Фритекс»</p>
+				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
+				<a href="#"> Политика конфиденциальности </a>
+				<a href="#"> ENGLISH VERSION </a>
+				<div class="footer__social flex ai-center">
+				<a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+				<a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+				</div>
+			</div>
+            
+			<p>Разработка: ovchenkova | digital</p>
         </div>
     </footer>
 

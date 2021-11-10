@@ -146,18 +146,26 @@
     </section>
 
     <!-- ======= Футер сайта ======= -->
-    <footer class="footer">
+    <footer class="footer mt-120">
         <div class="container footer__container flex jc-between ai-center">
-            <p>© 2021 «Фритекс»</p>
-            <button class="btn footer__btn">Задать вопрос</button>
-            <a href="#"> Политика конфиденциальности </a>
-            <a href="#"> ENGLISH VERSION </a>
-            <div class="footer__social flex ai-center">
-               <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
-               <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
-            </div>
+			<div class="flex ai-center jc-between footer__left">
+				<p>© 2021 «Фритекс»</p>
+				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
+				<a href="#"> Политика конфиденциальности </a>
+				<a href="#"> ENGLISH VERSION </a>
+				<div class="footer__social flex ai-center">
+				<a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+				<a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+				</div>
+			</div>
+            
+			<p>Разработка: ovchenkova | digital</p>
         </div>
     </footer>
+
+	<!-- ======= Скрипты ======= -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/popup.js"></script>
 
 </body>
 </html>
