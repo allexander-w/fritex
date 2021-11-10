@@ -151,7 +151,7 @@
             </p>
 
             <div class="market__blocks">
-                <div class="market__block">
+                <div class="market__block market__block-header">
                     <div class="line mb-60"></div>
                     <h3>Рынок автозапчастей</h3>
                 </div>
@@ -231,7 +231,9 @@
                     <button class="btn production-btn">Компетенции</button>
                 </div>
             </div>
+        </div>
 
+        <div class="container mobile-fullscreen">
             <!-- ======= Слайдер ======= -->
             <div class="production__slider production__slider-one">
                 <div class="production__slide"><img src="./img/index/production/1.png" alt="slide"></div>
@@ -241,7 +243,6 @@
                 <div class="production__slide"><img src="./img/index/production/1.png" alt="slide"></div>
                 <div class="production__slide"><img src="./img/index/production/1.png" alt="slide"></div>
             </div>
-
         </div>
     </section>
 
@@ -270,7 +271,11 @@
         <div class="container">
             
             <div class="line mb-60"></div>
-            <h3 class="mb-58">новости завода</h3>
+
+            <div class="news__header mb-58 flex ai-center jc-between">
+                <h3>новости завода</h3>
+                <a href="./news.html">Все новости</a>
+            </div>
 
             <div class="news__blocks">
                 <a class="news__block" href="#">
@@ -303,7 +308,7 @@
 
     <!-- ======= Футер сайта ======= -->
     <footer class="footer mt-120">
-        <div class="container footer__container flex jc-between ai-center">
+        <div class="container footer__container footer__desktop flex jc-between ai-center">
 			<div class="flex ai-center jc-between footer__left">
 				<p>© 2021 «Фритекс»</p>
 				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
@@ -316,6 +321,26 @@
 			</div>
             
 			<p>Разработка: ovchenkova | digital</p>
+        </div>
+
+        <div class="container footer__mobile flex jc-between ai-center">
+            <div>
+                <p class="mb-50">© 2021 «Фритекс»</p>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="flex fd-column jc-between ai-center">
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-27">Задать вопрос</button>
+                <div class="footer__social flex ai-center">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="ta-right">
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-49">Разработка: ovchenkova | digital</p>
+            </div>
         </div>
     </footer>
 

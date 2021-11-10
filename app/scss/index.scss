@@ -124,6 +124,10 @@ p {
   text-align: center;
 }
 
+.ta-right {
+  text-align: right;
+}
+
 .jc-end {
 	justify-content: flex-end;
 }
@@ -399,7 +403,6 @@ p {
 .market__block {
   display: block;
   position: relative;
-  max-width: 772px;
   height: 480px;
   overflow: hidden;
 
@@ -688,6 +691,16 @@ p {
 
 }
 
+.news__header {
+  a {
+    font-family: SFPro;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+  }
+}
+
 .news__date {
   font-family: SFPro;
   font-weight: normal;
@@ -753,6 +766,10 @@ p {
   line-height: 18px;
   letter-spacing: 0.2px;
   color: #FFFFFF;
+}
+
+.footer__mobile { 
+  display: none;
 }
 
 .innovation {
@@ -1401,6 +1418,7 @@ ul.list {
 .header__burger {
 	position: relative;
 	width: 30px;
+  display: none;
 }
 
 .header__burger span, .header__burger:after, .header__burger:before{
