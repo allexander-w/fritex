@@ -43,6 +43,15 @@ button {
 body {
   overflow-x: hidden;
   height: 100%;
+
+  background-color: #fff;
+  background-size: 257px 100%;
+  background-repeat: repeat-x;
+  background-image: linear-gradient(to right, #F1F1F1 1px, transparent 1px, transparent),
+                    linear-gradient(60deg, transparent 25px, #F1F1F1 25px, transparent 26px, transparent);
+  background-position: left 188px top,
+                       left 5px bottom,
+                       left 5px center;
 }
 
 body.brief-body {
