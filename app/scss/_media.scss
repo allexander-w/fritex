@@ -149,7 +149,7 @@
 		height: 350px;
 	
 		img {
-			max-width: 310px;
+			max-width: 100%;
 		}
 
 		&:first-child h3 {
@@ -273,7 +273,7 @@
 	}
 
 	.container {
-		max-width: 690px;
+		max-width: 730px;
 	}
 
 	.complectation__block {
@@ -294,16 +294,39 @@
 		margin-right: 30px;
 	}
 
+	.header-section .line {
+		margin-bottom: 30px;
+	}
+
+	.header__logotype {
+		width: 130px;
+	}
+
+	.hedaer__language {
+		margin-right: 39px;
+	}
+
 	.complectation__block:nth-child(2) img {
-		max-width: 374px;
+		max-width: 325px;
 	}
 
 	.complectation__block:nth-child(3) img {
-		max-width: 398px;
+		max-width: 343px;
 	}
 
 	.complectation__block:nth-child(4) img {
-		max-width: 283px;
+		max-width: 214px;
+	}
+
+	.complectation__block {
+		height: 270px;
+	}
+
+	.complectation__block p {
+		font-size: 23px;
+		line-height: 28px;
+		left: 16px;
+		top: 186px;
 	}
 
 	.market__blocks {
@@ -419,10 +442,11 @@
 
 		grid-auto-flow: column;
 		grid-auto-rows: 1fr;
+		gap: 10px;
 	}
 
 	.news__block {
-		width: 326px;
+		width: 330px;
 		padding: 20px;
 		height: 385px;
 
@@ -452,5 +476,215 @@
 	.footer__btn {
 		font-size: 13px;
 		line-height: 18px;
+	}
+
+
+}
+
+@media (max-width: 412px) {
+
+	.header-section__heading h1 {
+		font-size: 40px;
+		line-height: 49px;
+	}
+
+	.header-section__heading .line {
+		margin-bottom: 30px;
+	}
+
+	.header__logotype {
+		width: 130px;
+		margin-top: 3px;
+	}
+
+	.hedaer__language {
+		margin-right: 32px;
+		p {
+			font-size: 14px;
+			line-height: 18px;
+		}
+	}
+
+	.header-section__heading p:nth-child(1) {
+		margin-bottom: 30px;
+		font-size: 16px;
+		line-height: 19px;
+	}
+
+	.header-section__desc {
+		font-size: 16px;
+		line-height: 130%;
+		margin-bottom: 30px;
+	}
+
+	.header-section__product-item a {
+		font-size: 14px;
+		line-height: 130%;
+	}
+
+	.header-section__heading {
+		padding-top: 60px;
+	}
+
+	.header-section__product-item {
+		margin-bottom: 15px;
+	}
+
+	.header-section__products {
+		display: block;
+	}
+
+	.container {
+		padding: 0 15px;
+	}
+
+	.index-section-desc {
+		font-size: 16px;
+		line-height: 130%;
+	}
+
+	.complectation__blocks {
+		grid-template-columns: repeat(1, 1fr)
+	}
+
+	.complectation__block {
+		height: 302px;
+	}
+
+	.complectation__block:first-child {
+		height: 174px;
+	}
+
+	.complectation__block p {
+		font-size: 23px;
+		line-height: 28px;
+		left: 17px;
+		top: 216px;
+	}
+
+	.market .index-section-desc {
+		display: none;
+	}
+
+	.market__blocks {
+		display: block;
+	}
+
+	.market__block {
+		width: 342px;
+		margin: 0 auto 15px;
+	}
+
+	.market__block:first-child {
+		width: 100%;
+	}
+
+	.market__block img {
+		max-width: 100%;
+	}
+
+	.production .index-section-desc {
+		display: none;
+	}
+
+	.production {
+		margin-top: 60px;
+	}
+
+	.production__buttons {
+		display: none;
+	}
+
+	.production__buttons.mobile-version {
+		display: flex;
+	}
+
+	.production__slider-one .slick-list .slick-track {
+		height: 240px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.responsibility__block-image {
+		background-size: cover;
+	}
+
+	.responsibility__block:nth-child(2) h4, .responsibility__block:nth-child(2) p,
+	.responsibility__block:nth-child(3) h4, .responsibility__block:nth-child(3) p {
+		max-width: 322px;
+	}
+
+	.responsibility__block-quality, .responsibility__block-ecology {
+		height: 449px;
+	}
+
+	.news__header a {
+		display: none;
+	}
+
+	.news__header {
+		margin-bottom: 60px;
+	}
+
+	.news__desc {
+		-webkit-line-clamp: 3;
+		line-clamp: 3;
+		font-size: 18px;
+	}
+
+	.news__all-mobile {
+		font-family: SFPro;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 130%;
+		padding: 7px 0;
+		color: #000000;
+		display: block;
+		margin-top: 30px;
+	}
+
+	.footer {
+		margin-top: 60px;
+	}
+
+	.footer__mobile {
+		display: none;
+	}
+
+	.footer__mobile-xs {
+		display: flex;
+		padding: 28px 15px 30px;
+	}
+
+	.footer__mobile-xs button {
+		display: block;
+		width: 123px;
+	}
+
+	.footer__mobile-xs-left {
+		max-width: 123px;
+		margin-right: 83px;
+	}
+
+	.footer__mobile-xs-right {
+		p {
+			max-width: 105px;
+		}
+	}
+
+	.footer a, .footer p {
+		font-size: 12px;
+		line-height: 18px;
+	}
+	
+	.news {
+		margin-bottom: 0;
+	}
+
+	.news__date {
+		margin-left: 10px;
 	}
 }

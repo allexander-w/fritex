@@ -419,6 +419,7 @@ p {
     position: absolute;
     top: 0;
     z-index: 2;
+	max-width: 100%;
   }
 
   svg {
@@ -493,6 +494,10 @@ p {
   .line {
     margin-left: 30px;
   }
+}
+
+.production__buttons.mobile-version {
+	display: none;
 }
 
 .production__header {
@@ -657,6 +662,10 @@ p {
   }
 }
 
+.news__all-mobile {
+	display: none;
+}
+
 .news__blocks {
   display: grid;
   grid-template-columns: repeat( 3, 1fr );
@@ -668,6 +677,7 @@ p {
 }
 
 .news__block {
+  background-color: #fff;
   max-width: 513px;
   height: 480px;
   padding: 30px;
@@ -779,6 +789,10 @@ p {
 
 .footer__mobile { 
   display: none;
+}
+
+.footer__mobile-xs {
+	display: none;
 }
 
 .innovation {
