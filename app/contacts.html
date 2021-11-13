@@ -53,7 +53,7 @@
 
     <!-- ======= Шапка сайта ======= -->
     <header class="header">
-        <div class="container header__container flex jc-between ai-center">
+        <div class="container white header__container flex jc-between ai-center">
 
             <a href="./index.html"><img class="header__logotype" src="./img/index/logo.svg" alt="logotype"></a>
             
@@ -70,8 +70,12 @@
                 <div class="hedaer__language">
                     <a href="#"><p>EN</p></a>
                 </div>
+				
+				<div class="header__burger">
+					<span></span>
+				</div>
             </nav>
-
+            
         </div>
     </header>
 
@@ -95,7 +99,7 @@
                 <div class="sidebar-container">
                     
                     <h1 class="heading-60 pl-21 mt-90 mb-90">Контакты</h1>
-                    <div class="flex jc-between pl-21 mb-60">
+                    <div class="flex jc-between pl-21 mb-60 contacts__desc">
                         <p class="text-20">
                             ул. Советская, 79 <br>
                             150003, г. Ярославль, Россия <br><br>
@@ -224,8 +228,8 @@
     </div>
 
     <!-- ======= Футер сайта ======= -->
-    <footer class="footer mt-120">
-        <div class="container footer__container flex jc-between ai-center">
+    <footer class="footer">
+        <div class="container footer__container footer__desktop flex jc-between ai-center">
 			<div class="flex ai-center jc-between footer__left">
 				<p>© 2021 «Фритекс»</p>
 				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
@@ -238,6 +242,43 @@
 			</div>
             
 			<p>Разработка: ovchenkova | digital</p>
+        </div>
+
+        <div class="container footer__mobile flex jc-between ai-center">
+            <div>
+                <p class="mb-50">© 2021 «Фритекс»</p>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="flex fd-column jc-between ai-center">
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-27">Задать вопрос</button>
+                <div class="footer__social flex ai-center">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="ta-right">
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-49">Разработка: ovchenkova | digital</p>
+            </div>
+        </div>
+
+		<div class="container footer__mobile-xs flex ai-center">
+            <div class="footer__mobile-xs-left">
+                <p class="mb-31">© 2021 «Фритекс»</p>
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-31">Задать вопрос</button>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="footer__mobile-xs-right">
+				<div class="footer__social flex ai-center mb-35">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-35">Разработка: ovchenkova | digital</p>
+            </div>
         </div>
     </footer>
 
