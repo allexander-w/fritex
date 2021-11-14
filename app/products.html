@@ -18,6 +18,53 @@
     ======================================================== -->
 </head>
 <body>
+
+    <!-- ======= Мобильное меню ======= -->
+    <div id="burger" class="burger" data-close="burger__expanded">
+        <div class="container">
+            <div class="burger__menu flex jc-between">
+
+                <div class="burger__menu-one">
+                    <a class="burger__heading-link" href="./about.html"> О заводе </a>
+
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-list-item"><a href="./news.html" class="burger__menu-list-link">Новости</a></li>
+                        <li class="burger__menu-list-item"><a href="./quality-policy.html" class="burger__menu-list-link">Политика в области качества</a></li>
+                        <li class="burger__menu-list-item"><a href="./ecology.html" class="burger__menu-list-link">Экология</a></li>
+                        <li class="burger__menu-list-item"><a href="./control.html" class="burger__menu-list-link">Корпоративное управление</a></li>
+                        <li class="burger__menu-list-item"><a href="./vacancies.html" class="burger__menu-list-link">Вакансии</a></li>
+                    </ul>
+                </div>
+
+                <div class="burger__menu-two">
+                    <a class="burger__heading-link" href="./products.html">Продукция </a>
+
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Теплозащитные экраны</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Металлические прокладки</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Диски фрикционные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Теплообменники</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Накладки тормозные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Накладки фрикционные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Уплотнительные прокладки</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Диски стальные</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <a class="burger__heading-link" href="./innovation.html">Инновации</a>
+                    <a class="burger__heading-link" href="#">Компетенции</a>
+                    <a class="burger__heading-link" href="./clients.html">Клиенты</a>
+                    <a class="burger__heading-link" href="./contacts.html">Контакты</a>
+                </div>
+
+            </div>
+
+            <div class="trigger-close popup__close burger__close-btn" data-close="burger__expanded" data-parent-id="burger"></div>
+
+        </div>
+    </div>
+
 	<!-- ======= Задать вопрос попап ======= -->
     <div class="popup-wrapper dn" id="question-modal">
         <div class="popup">
@@ -52,7 +99,7 @@
 
     <!-- ======= Шапка сайта ======= -->
     <header class="header">
-        <div class="container header__container flex jc-between ai-center">
+        <div class="container white header__container flex jc-between ai-center">
 
             <a href="./index.html"><img class="header__logotype" src="./img/index/logo.svg" alt="logotype"></a>
             
@@ -69,15 +116,21 @@
                 <div class="hedaer__language">
                     <a href="#"><p>EN</p></a>
                 </div>
+				
+				<div data-modal="burger" data-class="burger__expanded" class="header__burger trigger">
+					<span></span>
+				</div>
             </nav>
-
+            
         </div>
     </header>
 
     <!-- ======= Секция "ПЕРВИЧНАЯ КОМПЛЕКТАЦИЯ" ======= -->
-    <section class="complectation ">
+    <section class="complectation products__complectation">
         <div class="container">
-            <p class="index-section-desc complectation__desc">
+            <h1 class="heading-60 pl-21 mt-90 mb-90">продукция завода Фритекс</h1>
+
+            <p class="index-section-desc complectation__desc products__complectation-desc">
                 «ФРИТЕКС» обладает уникальными технологиями производства автокомпонентов. Компетенции завода сфокусированы на рынке первичной комплектации (автосборочных предприятиях).
             </p>
 
@@ -106,14 +159,14 @@
     </section>
 
     <!-- ======= Секция "РЫНОК АВТОЗАПЧАСТЕЙ" ======= -->
-    <section class="market mb-150">
+    <section class="market mb-150 mbm-60">
         <div class="container">
-            <p class="index-section-desc market__desc">
+            <p class="index-section-desc market__desc products__market-desc">
                 В каталоге завода больше 1000 наименований фрикционных запчастей для легковых автомобилей, грузовиков, сельхозтехники, метрополитена, железнодорожного транспорта, систем газопровода, лебёдок буровых установок, подъёмных агрегатов. 
             </p>
 
             <div class="market__blocks">
-                <div class="market__block">
+                <div class="market__block market__block-header">
                     <div class="line mb-60"></div>
                     <h3>Рынок автозапчастей</h3>
                 </div>
@@ -177,8 +230,8 @@
     </section>
 
     <!-- ======= Футер сайта ======= -->
-    <footer class="footer mt-120">
-        <div class="container footer__container flex jc-between ai-center">
+    <footer class="footer">
+        <div class="container footer__container footer__desktop flex jc-between ai-center">
 			<div class="flex ai-center jc-between footer__left">
 				<p>© 2021 «Фритекс»</p>
 				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
@@ -191,6 +244,43 @@
 			</div>
             
 			<p>Разработка: ovchenkova | digital</p>
+        </div>
+
+        <div class="container footer__mobile flex jc-between ai-center">
+            <div>
+                <p class="mb-50">© 2021 «Фритекс»</p>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="flex fd-column jc-between ai-center">
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-27">Задать вопрос</button>
+                <div class="footer__social flex ai-center">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="ta-right">
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-49">Разработка: ovchenkova | digital</p>
+            </div>
+        </div>
+
+		<div class="container footer__mobile-xs flex ai-center">
+            <div class="footer__mobile-xs-left">
+                <p class="mb-31">© 2021 «Фритекс»</p>
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-31">Задать вопрос</button>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="footer__mobile-xs-right">
+				<div class="footer__social flex ai-center mb-35">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-35">Разработка: ovchenkova | digital</p>
+            </div>
         </div>
     </footer>
 

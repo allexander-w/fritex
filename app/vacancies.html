@@ -19,35 +19,49 @@
 </head>
 <body>
 
-    <!-- ======= Задать вопрос попап ======= -->
-    <div class="popup-wrapper dn" id="question-modal">
-        <div class="popup">
-            <h3 class="heading-36 mb-60">Задать вопрос</h3>
+    <!-- ======= Мобильное меню ======= -->
+    <div id="burger" class="burger" data-close="burger__expanded">
+        <div class="container">
+            <div class="burger__menu flex jc-between">
 
-            <form action="#">
-				<div class="popup__close"></div>
+                <div class="burger__menu-one">
+                    <a class="burger__heading-link" href="./about.html"> О заводе </a>
 
-                <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="ФИО" type="text">
-                    <p class="main-input__error-msg">message</p>
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-list-item"><a href="./news.html" class="burger__menu-list-link">Новости</a></li>
+                        <li class="burger__menu-list-item"><a href="./quality-policy.html" class="burger__menu-list-link">Политика в области качества</a></li>
+                        <li class="burger__menu-list-item"><a href="./ecology.html" class="burger__menu-list-link">Экология</a></li>
+                        <li class="burger__menu-list-item"><a href="./control.html" class="burger__menu-list-link">Корпоративное управление</a></li>
+                        <li class="burger__menu-list-item"><a href="./vacancies.html" class="burger__menu-list-link">Вакансии</a></li>
+                    </ul>
                 </div>
 
-                <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="Эл.почта" type="text">
-                    <p class="main-input__error-msg">message</p>
+                <div class="burger__menu-two">
+                    <a class="burger__heading-link" href="./products.html">Продукция </a>
+
+                    <ul class="burger__menu-list">
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Теплозащитные экраны</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Металлические прокладки</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Диски фрикционные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Теплообменники</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Накладки тормозные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Накладки фрикционные</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Уплотнительные прокладки</a></li>
+                        <li class="burger__menu-list-item"><a href="./products-detail.html" class="burger__menu-list-link">Диски стальные</a></li>
+                    </ul>
                 </div>
 
-                <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="Телефон" type="text">
-                    <p class="main-input__error-msg">message</p>
+                <div>
+                    <a class="burger__heading-link" href="./innovation.html">Инновации</a>
+                    <a class="burger__heading-link" href="#">Компетенции</a>
+                    <a class="burger__heading-link" href="./clients.html">Клиенты</a>
+                    <a class="burger__heading-link" href="./contacts.html">Контакты</a>
                 </div>
 
-                <textarea class="main-textarea__self mb-30" placeholder="Напишите в этом поле любую дополнительную информацию" type="text"></textarea>
+            </div>
 
-                <p class="text-20 mb-30">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных</p>
+            <div class="trigger-close popup__close burger__close-btn" data-close="burger__expanded" data-parent-id="burger"></div>
 
-				<button type="submit" class="btn black-btn">Отправить</button>
-            </form>
         </div>
     </div>
 
@@ -125,7 +139,7 @@
                     <a href="#"><p>EN</p></a>
                 </div>
 				
-				<div class="header__burger">
+				<div data-modal="burger" data-class="burger__expanded" class="header__burger trigger">
 					<span></span>
 				</div>
             </nav>
@@ -153,7 +167,7 @@
                 <div class="sidebar-container">
                     
                     <h1 class="heading-60 pl-21 mt-90 mb-90">Вакансии</h1>
-                    <p class="pl-21 mb-90 text-20">
+                    <p class="vacancies__desc pl-21 mb-90 text-20">
                         Мы стремимся дать нашим сотрудникам возможность реализовать весь их творческий потенциал, предоставляем возможности карьерного роста и профессионального развития. Если хотите расти и приносить пользу, вас ждет множество возможностей. Повышение квалификации за счет компании, конференции, командировки на зарубежные предприятия и НИИ — не только для руководителей. 
                     </p>
 
@@ -170,33 +184,34 @@
                         </div>
 
                         <div class="dropdown__content">
-
-                            <p class="text-20">
+                            <p class="vacancies__dropdown-text text-20">
                                 Водитель электропогрузчика мощностью от 4 до 25 кВт <br><br>
                                 Обязанности:
                             </p>
-                            <ul class="list pl-21">
+
+                            <ul class="vacancies__dropdown-list list pl-21">
                                 <li class="list__item">управление ЭЛЕКТРОпогрузчиком мощностью свыше 4 кВт.</li>
                                 <li class="list__item">транспортировка грузов в цехах предприятия;</li>
                                 <li class="list__item">передвижение только по территории предприятия.</li>
                             </ul>
-
+                            
                             <br>
                             
-                            <p class="text-20">
+                            <p class="vacancies__dropdown-text text-20">
                                 Требования:
                             </p>
-                            <ul class="list pl-21">
+
+                            <ul class="vacancies__dropdown-list list pl-21">
                                 <li class="list__item">наличие прав на управление ЭЛЕКТРОпогрузчиком (удостоверение тракториста-машиниста категории B, C, в особых отметках «вождение электропогрузчика»).</li>
                             </ul> 
 
                             <br>
 
-                            <p class="text-20">
+                            <p class="vacancies__dropdown-text text-20">
                                 Условия:
                             </p>
 
-                            <ul class="list pl-21">
+                            <ul class="vacancies__dropdown-list list pl-21">
                                 <li class="list__item">заработная плата от 20000 рублей.</li>
                                 <li class="list__item">3-х сменный график работы;</li>
                                 <li class="list__item">выплачивается дотация на питание (столовая на территории предприятия).</li>
@@ -242,8 +257,8 @@
     </div>
 
     <!-- ======= Футер сайта ======= -->
-    <footer class="footer mt-120">
-        <div class="container footer__container flex jc-between ai-center">
+    <footer class="footer">
+        <div class="container footer__container footer__desktop flex jc-between ai-center">
 			<div class="flex ai-center jc-between footer__left">
 				<p>© 2021 «Фритекс»</p>
 				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
@@ -256,6 +271,43 @@
 			</div>
             
 			<p>Разработка: ovchenkova | digital</p>
+        </div>
+
+        <div class="container footer__mobile flex jc-between ai-center">
+            <div>
+                <p class="mb-50">© 2021 «Фритекс»</p>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="flex fd-column jc-between ai-center">
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-27">Задать вопрос</button>
+                <div class="footer__social flex ai-center">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+            </div>
+
+            <div class="ta-right">
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-49">Разработка: ovchenkova | digital</p>
+            </div>
+        </div>
+
+		<div class="container footer__mobile-xs flex ai-center">
+            <div class="footer__mobile-xs-left">
+                <p class="mb-31">© 2021 «Фритекс»</p>
+                <button data-modal="question-modal" class="btn footer__btn trigger mb-31">Задать вопрос</button>
+                <a href="#"> Политика конфиденциальности </a>
+            </div>
+
+            <div class="footer__mobile-xs-right">
+				<div class="footer__social flex ai-center mb-35">
+                    <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+                    <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+                </div>
+                <a href="#"> ENGLISH VERSION </a>
+                <p class="mt-35">Разработка: ovchenkova | digital</p>
+            </div>
         </div>
     </footer>
 
