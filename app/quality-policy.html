@@ -69,33 +69,36 @@
     </div>
 
 	<!-- ======= Задать вопрос попап ======= -->
-    <div class="popup-wrapper dn" id="question-modal">
+    <div class="popup-wrapper" id="question-modal">
         <div class="popup">
             <h3 class="heading-36 mb-60">Задать вопрос</h3>
 
-            <form action="#">
-				<div class="popup__close"></div>
+            <form action="#" id="question-form">
+				<div class="popup__close trigger-close" data-close="popup-wrapper__expanded" data-parent-id="question-modal"></div>
 
                 <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="ФИО" type="text">
+                    <input data-prop="name" class="main-input__self" placeholder="ФИО" type="text">
                     <p class="main-input__error-msg">message</p>
                 </div>
 
                 <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="Эл.почта" type="text">
+                    <input data-prop="email" class="main-input__self" placeholder="Эл.почта" type="text">
                     <p class="main-input__error-msg">message</p>
                 </div>
 
                 <div class="main-input mb-30">
-                    <input class="main-input__self" placeholder="Телефон" type="text">
+                    <input data-prop="phone" class="main-input__self" placeholder="Телефон" type="text">
                     <p class="main-input__error-msg">message</p>
                 </div>
 
-                <textarea class="main-textarea__self mb-30" placeholder="Напишите в этом поле любую дополнительную информацию" type="text"></textarea>
+				<div class="main-textarea mb-30">
+					<textarea data-prop="text" class="main-textarea__self" placeholder="Напишите в этом поле любую дополнительную информацию" type="text"></textarea>
+                    <p class="main-input__error-msg">message</p>
+				</div>
 
                 <p class="text-20 mb-30">Нажимая кнопку «Отправить», я даю согласие на обработку моих персональных данных</p>
 
-				<button type="submit" class="btn black-btn">Отправить</button>
+				<button type="submit" class="btn black-btn question-send">Отправить</button>
             </form>
         </div>
     </div>
@@ -202,12 +205,12 @@
         <div class="container footer__container footer__desktop flex jc-between ai-center">
 			<div class="flex ai-center jc-between footer__left">
 				<p>© 2021 «Фритекс»</p>
-				<button data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
+				<button data-class="popup-wrapper__expanded" data-modal="question-modal" class="btn footer__btn trigger">Задать вопрос</button>
 				<a href="#"> Политика конфиденциальности </a>
 				<a href="#"> ENGLISH VERSION </a>
 				<div class="footer__social flex ai-center">
-				<a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
-				<a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
+					<a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
+					<a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
 				</div>
 			</div>
             
@@ -221,8 +224,8 @@
             </div>
 
             <div class="flex fd-column jc-between ai-center">
-                <button data-modal="question-modal" class="btn footer__btn trigger mb-27">Задать вопрос</button>
-                <div class="footer__social flex ai-center">
+                <button data-modal="question-modal" data-class="popup-wrapper__expanded"  class="btn footer__btn trigger mb-27">Задать вопрос</button>
+				<div class="footer__social flex ai-center">
                     <a href="#"> <img class="mr-20" src="./img/index/footer/1.svg" alt=""> </a>
                     <a href="#"> <img src="./img/index/footer/2.svg" alt=""> </a>
                 </div>
@@ -237,7 +240,7 @@
 		<div class="container footer__mobile-xs flex ai-center">
             <div class="footer__mobile-xs-left">
                 <p class="mb-31">© 2021 «Фритекс»</p>
-                <button data-modal="question-modal" class="btn footer__btn trigger mb-31">Задать вопрос</button>
+                <button data-modal="question-modal" data-class="popup-wrapper__expanded" class="btn footer__btn trigger mb-31">Задать вопрос</button>
                 <a href="#"> Политика конфиденциальности </a>
             </div>
 
