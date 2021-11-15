@@ -9,6 +9,10 @@
 		max-width: 720px;
 	}
 
+	.clients>.container {
+		max-width: 720px;
+	}
+
 	.complectation__block {
 		h3 {
 			font-size: 20px ;
@@ -102,10 +106,22 @@
 	
 	.responsibility__block-quality {
 		height: 379px;
+	
+		&:before {
+			height: 379px;
+		}
 	}
 	
 	.responsibility__block-ecology {
-		height: 403px;
+		height: 402px;
+
+		&:before {
+			height: 402px;
+		}
+	}
+
+	.responsibility__block:nth-child(1) {
+		background-position: -22px -220px;
 	}
 
 	.responsibility__block:nth-child(2) h4 {

@@ -38,6 +38,8 @@
 		line-height: 130%;
 		margin-bottom: 60px;
 		max-width: 770px;
+
+		width: 100%;
 	}
 	
 	.header-section__product-item {
@@ -52,6 +54,8 @@
 		font-size: 18px;
 		max-width: 522px;
 		margin-bottom: 60px;
+
+		width: 100%;
 	}
 
 	.complectation {
@@ -181,6 +185,10 @@
 		max-width: 960px;
 	}
 
+	.clients>.container {
+		max-width: 960px;
+	}
+
 	.index-section-desc {
 		margin-left: 0;
 	}
@@ -202,6 +210,7 @@
 	}
 
 	.responsibility__block {
+
 		&:nth-child(2) h4 {
 			font-size: 20px;
 			line-height: 24px;
@@ -216,13 +225,21 @@
 			margin: 90px 0 60px 97px;
 		}
 
+		svg {
+			margin-left: 98px;
+		}
 
 		p {
-			max-width: 317px;
+			max-width: 326px;
 			font-size: 18px;
 			line-height: 130%;
 			margin-left: 97px;
 		}
+
+		p, h4 {
+			width: 100%;
+		}
+
 	}
 
 	.production .line {
