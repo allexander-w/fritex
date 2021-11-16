@@ -243,6 +243,66 @@
 		max-width: 397px;
 	}
 
+	.about .sidebar-container {
+		max-width: 397px;
+		margin-left: 7px;
+	}
+
+	.about .slider-container {
+		max-width: 412px;
+	}
+
+	.about__slider .slick-list .slick-track {
+		height: 240px;
+	}
+
+	.about__slider .slick-dots li.slick-active button {
+		width: 8px;
+		height: 8px;
+		background-color: #ffdb30;
+		transform: translate(0);
+	}
+
+	.about__slider .slick-dots li button {
+		width: 8px;
+		height: 8px;
+		transform: translate(0);
+	}
+
+	.about__products-wrapper {
+		flex-direction: column;
+		margin-left: 0;
+	}
+
+	.about__positions {
+		gap: 30px;
+	}
+
+	.about__position {
+
+		&-card {
+			max-width: 176px;
+			height: 228px;
+			margin-bottom: 15px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+	
+	.about__rules-heading {
+		max-width: 250px;
+	}
+
+	.about__history-content {
+		margin-bottom: 0;
+	}
+
 	.vacancies .dropdown:last-child {
 		margin-bottom: 0;
 	}
@@ -279,6 +339,14 @@
 		margin-bottom: 0;
 	}
 
+	.mbxs-15 {
+		margin-bottom: 15px;
+	}
+
+	.mbxs-30 {
+		margin-bottom: 30px;
+	}
+
     .mbxs-60 {
 		margin-bottom: 60px;
 	}
@@ -299,6 +367,23 @@
     .clients__blocks {
         grid-gap: 30px;
     }
+
+	.clients.popup {
+		max-width: 412px;
+		padding: 60px 17px;
+
+		p, h3 {
+			text-align: left;
+		}
+
+		h3 {
+			margin-bottom: 15px;
+		}
+
+		p {
+			margin-bottom: 30px;
+		}
+	}
 
     .error__block {
         margin: 90px 15px 60px;
@@ -352,6 +437,18 @@
 		margin-bottom: 15px;
 		max-width: 377px;
 		width: 100%;
+	}
+
+	.innovation__slider {
+		min-height: 200px;
+	}
+
+	.innovation__slider-one img {
+		width: 314px;
+	}
+
+	.innovation__slider-two img {
+		width: 220px;
 	}
 
 }

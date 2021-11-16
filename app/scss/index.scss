@@ -1398,7 +1398,7 @@ ul.list {
   max-width: 273px;
   p {
     font-family: SFPro;
-    font-weight: normal;
+    font-weight: 600;
     font-size: 20px;
     line-height: 130%;
     color: #000000;
@@ -1426,10 +1426,26 @@ ul.list {
 }
 
 .about__history-years {
+  position: relative;
   margin-left: 13px;
+
+  .about__history-years-caret {
+    position: absolute;
+    left: 0;
+    width: 60px;
+    height: 35px;
+    background-color: $yellow;
+    z-index: 1;
+
+    transition: .3s ease;
+  }
+
   p {
+    position: relative;
     padding: 5px 8px;
     cursor: pointer;
+
+    z-index: 2;
 
     font-family: SFPro;
     font-weight: normal;
@@ -1439,10 +1455,6 @@ ul.list {
 
     &:not(:last-child) {
       margin-right: 9px;
-    }
-
-    &.active {
-      background-color: $yellow;
     }
 
     &:hover:not(&.active) {
@@ -1710,6 +1722,14 @@ ul.list {
 
 .burger {
 	display: none;
+}
+
+.hide {
+  display: none;
+}
+
+.show-block {
+  display: block; 
 }
 
 @import "./_media.scss";

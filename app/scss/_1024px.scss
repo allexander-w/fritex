@@ -199,6 +199,12 @@
 		padding: 0;
 	}
 
+	.innovation > .container-min {
+		max-width: 960px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
+
 	.responsibility { 
 		margin-bottom: 60px;
 	}
@@ -367,6 +373,24 @@
 		margin-left: -13px;
 	}
 
+	.about__history-years {
+		margin-left: 0;
+
+		p {
+			font-size: 23px;
+		}
+	}
+
+	.about__history-years {
+		.about__history-years-caret {
+		  width: 63px;
+		}
+	}
+
+	.about__history-content {
+		margin-left: 8px;
+	}
+
 	.sidebar {
 		display: none;
 	}
@@ -405,8 +429,14 @@
 	}
 
 	.about__positions {
-		gap: 35px 50px;
+		gap: 60px 50px;
 		margin-left: 8px;
+	}
+
+	.about__history-content {
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.text-20 {
@@ -509,6 +539,8 @@
     	line-height: 130%;
 		margin-bottom: 15px;
 	}
+
+	
 
 	.quality__sertificates, .ecology__sertificates {
 		margin-left: 0;	
@@ -639,7 +671,20 @@
         margin-bottom: 60px;
     }
 
-    .innovation__slider-one .slick-list .slick-track {
+	.innovation__slider {
+		min-height: 360px;
+	}
+
+	.innovation__slider-one img {
+		width: 765px;
+	}
+
+	.innovation__slider-two img {
+		width: 390px;
+	}
+
+	.innovation__slider .slick-dots {
+		bottom: 20px;
 	}
 
     .clients__blocks {
@@ -654,6 +699,19 @@
     .clients { 
         margin-bottom: 60px;
     }
+
+	.clients.popup {
+		max-width: 610px;
+		padding: 60px 80px;
+	}
+
+	.clients__products {
+		display: block;
+	}
+
+	.clients__product-item a {
+		font-size: 18px;
+	}
 
     .clients .heading-60 {
         margin-top: 79px;
@@ -721,5 +779,13 @@
 		font-size: 50px;
 		right: 20px;
 		top: 25px;
+	}
+
+	.md-hide {
+		display: none;
+	}
+
+	.md-show-block {
+		display: block;
 	}
 }

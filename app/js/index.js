@@ -10,6 +10,11 @@ $(document).ready(function(){
         arrows: false
     });
 
+    $('.innovation__slider-two').slick({
+        dots: true,
+        arrows: false
+    });
+
     $('.about__slider').slick({
         dots: true,
         arrows: false

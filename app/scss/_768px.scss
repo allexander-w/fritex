@@ -312,6 +312,11 @@
         margin-bottom: 60px;
     }
 
+	.clients.popup {
+		max-width: 526px;
+		padding: 60px 38px;
+	}
+
     .clients .heading-60 {
         margin-top: 79px;
         margin-bottom: 60px;
@@ -342,6 +347,68 @@
 
 	.products-detail__files a:first-child {
 		margin-right: 71px;
+	}
+
+	.about__history-years {
+		overflow-x: auto;
+	}
+
+	.about .sidebar-container {
+		max-width: 708px;
+		margin-left: 31px;
+	}
+
+	.about .slider-container {
+		max-width: 768px;
+	}
+
+	.about__slider .slick-dots {
+		bottom: 15px;
+	}
+
+	.about__slider .slick-dots li.slick-active button {
+		width: 10px;
+		height: 10px;
+		background-color: #ffdb30;
+		transform: translate(0);
+	}
+
+	.about__slider .slick-list .slick-track {
+		height: 450px;
+	}
+
+	.about__products:first-child {
+		margin-right: 57px;
+	}
+
+	.innovation__slider .slick-dots {
+		bottom: 15px;
+	}
+
+	
+	.innovation__slider .slick-dots li.slick-active button {
+		width: 8px;
+		height: 8px;
+		background-color: #ffdb30;
+		transform: translate(0);
+	}
+
+	.innovation__slider .slick-dots li button {
+		width: 8px;
+		height: 8px;
+		transform: translate(0);
+	}
+
+	.innovation__slider {
+		min-height: 270px;
+	}
+
+	.innovation__slider-one img {
+		width: 567px;
+	}
+
+	.innovation__slider-two img {
+		width: 292px;
 	}
 
 }
