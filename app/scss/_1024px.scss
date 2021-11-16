@@ -327,6 +327,46 @@
 		grid-template-columns: 1fr;
 	}
 
+	.sidebar-layout__container.about__sidebar-layout-container {
+		max-width: 100%;
+		padding:0;
+		margin: 0;
+	}
+
+	.about .slider-container {
+		max-width: 1024px;
+	}
+
+	.about .sidebar-container {
+		max-width: 756px;
+		margin-left: 47px;
+	}
+
+	.about__slider .slick-list .slick-track {
+		height: 600px;
+
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+
+	.about__products .about__product a {
+		font-size: 18px;
+	}
+
+	.about__products .about__product {
+		margin-bottom: 3px;
+	}
+
+	.about__products:first-child {
+		margin-right: 177px;
+	}
+
+	.about__products-wrapper {
+		margin-left: -13px;
+	}
+
 	.sidebar {
 		display: none;
 	}
@@ -352,12 +392,21 @@
 		margin-bottom: 30px;
 	}
 
-	.about p {
+	.about__text {
 		margin-bottom: 60px;
 	}
 
 	.about .pl-21 {
 		padding-left: 8px;
+	}
+
+	.about__position p {
+		font-size: 18px;
+	}
+
+	.about__positions {
+		gap: 35px 50px;
+		margin-left: 8px;
 	}
 
 	.text-20 {
@@ -465,6 +514,34 @@
 		margin-left: 0;	
 	}
 
+	.ecology .heading-60 {
+		margin-top: 60px;
+		margin-bottom: 60px;
+	}
+
+	.ecology .pl-21 {
+		padding-left: 0;
+	}
+
+	.ecology .text-20 {
+		max-width: 770px;
+		font-size: 18px;
+		line-height: 130%;
+	}
+
+	.ecology .text-24 {
+		font-size: 20px;
+		line-height: 130%;
+	}
+
+	.ecology ul.list li {
+		font-size: 18px;
+    	line-height: 130%;
+		margin-bottom: 15px;
+		
+		width: 100%;
+	}
+
 	.news-all {
 		h1 {
 			margin: 60px 0;
@@ -491,6 +568,10 @@
 	.mbm-30 {
 		margin-bottom: 30px;
 	}
+	
+	.mbm-20 {
+		margin-bottom: 20px;
+	}
 
 	.mbm-60 {
 		margin-bottom: 60px;
@@ -498,6 +579,10 @@
 
 	.mtm-60 {
 		margin-top: 60px;
+	}
+
+	.mtm-54 {
+		margin-top: 54px;
 	}
 
 	.news-detail .sidebar-container > *:last-child {
@@ -521,6 +606,34 @@
     .products__complectation {
         padding: 0 0 60px 0 ;
     }
+
+	.products-detail h1 {
+		margin-top: 79px;
+		margin-bottom: 60px;
+	}
+
+	.products-detail .pl-21 {
+		padding-left: 0;
+	}	
+
+	.products-detail__files-heading {
+		margin-top: 0;
+		margin-bottom: 60px;
+	}
+
+	.products-detail__files {
+		p {
+			max-width: 210px;
+		}
+	}
+
+	.products-detail__files a:first-child {
+		margin-right: 112px;
+	}
+
+	.products-detail__files {
+		margin-bottom: 60px;
+	}
 
     .innovation {
         margin-bottom: 60px;

@@ -1237,7 +1237,7 @@ ul.list {
   margin-left: 21px;
   display: grid;
   grid-template-columns: repeat( 3, 1fr );
-  grid-gap: 57px 30px;  
+  grid-gap: 30px;  
 }
 
 .ecology__desc {
@@ -1257,6 +1257,10 @@ ul.list {
 
 .products-detail__file-name {
   max-width: 210px;
+}
+
+.products-detail img {
+	max-width: 100%;
 }
 
 .news-all__block {
