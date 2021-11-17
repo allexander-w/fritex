@@ -7,6 +7,11 @@
 
 	.container {
 		max-width: 720px;
+		padding: 0 15px
+	}
+
+	.header .container.white {
+		max-width: 720px;
 	}
 
 	.clients>.container {
@@ -176,10 +181,15 @@
 	}
 
 	.production__slider .slick-dots li.slick-active button {
-		width: 10px;
-		height: 10px;
 		background-color: #ffdb30;
+		width: 8px;
+		height: 8px;
 		transform: translate(0);
+	}
+
+	.production__slider .slick-dots li button {
+		width: 8px;
+		height: 8px;
 	}
 
 	.production__slider-one .slick-list .slick-track {
@@ -195,7 +205,7 @@
 	}
 
 	.production__slider .slick-dots {
-		bottom: 15px;
+		bottom: 5px;
 	}
 
 	.production {
@@ -285,8 +295,21 @@
 	}
 
 	.vacancies .vacancies__desc {
-		font-size: 16px;
+		font-size: 18px;
 		line-height: 130%;
+	}
+
+	.products__complectation h1 {
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+
+	.products__complectation h1, .products__complectation p {
+		padding-left: 0;
+	}
+
+	.products-detail img {
+		max-width: 91%;
 	}
 
 	.dropdown__header {
@@ -305,12 +328,20 @@
 	}
 
 	.news-all__block {
-		padding: 30px 15px 15px 15px;
+		padding: 30px 45px 45px 45px;
 		margin-bottom: 60px;
 		.text-24 {
 			font-size: 18px;
 			line-height: 130%;
 		}
+	}
+
+	.news-all h1 {
+		padding-left: 0;
+	}
+
+	.news-detail h1 {
+		margin-top: 66px;
 	}
 
     .mbs-30 {
@@ -341,9 +372,17 @@
 	}
 
     .clients .heading-60 {
-        margin-top: 79px;
-        margin-bottom: 60px;
+        margin-top: 60px;
+        margin-bottom: 30px;
     }
+
+	.clients .container.min {
+		padding: 0 15px 0 40px;
+	}
+
+	.clients .container.min.clients__tiles {
+		padding: 0 15px 0 93px;
+	}
 
     .error__block {
         margin: 90px 39px 60px;
@@ -386,7 +425,7 @@
 	}
 
 	.about__slider .slick-dots {
-		bottom: 15px;
+		bottom: 5px;
 	}
 
 	.about__slider .slick-dots li.slick-active button {
@@ -398,6 +437,11 @@
 
 	.about__slider .slick-list .slick-track {
 		height: 450px;
+	}
+
+	.about__slider .about__arrow-next, .about__slider .about__arrow-prev {
+		opacity: 0;
+		z-index: -1;
 	}
 
 	.about__products:first-child {
@@ -432,6 +476,25 @@
 
 	.innovation__slider-two img {
 		width: 292px;
+	}
+
+	.innovation>.container-min {
+		max-width: 720px;
+	}
+
+	.competence>.container-min {
+		max-width: 720px;
+		padding: 0 15px;
+	}
+
+	.competence__nums {
+		margin-left: 0;
+		gap: 45px 79px;
+		margin-bottom: 60px;
+	}
+
+	.competence__num:nth-child(3) h3 {
+		font-size: 30px;
 	}
 
 }

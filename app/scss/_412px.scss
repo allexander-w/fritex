@@ -111,6 +111,10 @@
 
 	.market__block:first-child {
 		width: 100%;
+
+		h3 {
+			margin-bottom: 45px;
+		}
 	}
 
 	.market__block img {
@@ -283,6 +287,10 @@
 		height: 240px;
 	}
 
+	.about__slider .about__arrow-next, .about__slider .about__arrow-prev {
+		display: none;
+	}
+
 	.about__slider .slick-dots li.slick-active button {
 		width: 8px;
 		height: 8px;
@@ -315,15 +323,26 @@
 
 		p {
 			font-size: 16px;
+			margin-bottom: 5px;
 		}
 
 		img {
 			max-width: 100%;
 		}
+
+		span { 
+			font-size: 16px;
+		}
 	}
 	
 	.about__rules-heading {
 		max-width: 250px;
+	}
+
+	
+
+	.about__history-years p {
+		font-size: 18px;
 	}
 
 	.about__history-content {
@@ -342,6 +361,10 @@
 		h3 {
 			padding-left: 13px;
 		}
+	}
+
+	.vacancies .vacancies__desc {
+		font-size: 16px;
 	}
 
 	.footer {
@@ -376,6 +399,10 @@
 
     .mbxs-60 {
 		margin-bottom: 60px;
+	}
+
+	.mtxs-65 {
+		margin-top: 65px;
 	}
 
 	.news-detail .sidebar-container > *:last-child {
@@ -458,6 +485,11 @@
 		margin-bottom: 30px;
 	}
 
+	ul.list li {
+		font-size: 16px;
+		line-height: 127%;
+	}
+
 	.ecology ul.list li, .quality ul.list li {
 		font-size: 16px;
     	line-height: 130%;
@@ -476,6 +508,90 @@
 
 	.innovation__slider-two img {
 		width: 220px;
+	}
+
+	.products__complectation .container, .products__market .container {
+		padding: 0 7px;
+	}
+
+	.products__detail-layout .container {
+		padding: 0 7px;
+	}
+
+	.products-detail p {
+		font-size: 18px;
+	}
+
+	.products-detail img {
+		max-width: 83%;
+	}
+
+	.products-detail__files {
+		margin-left: 16px;
+	}
+
+	.innovation .container {
+		padding: 0 7px;
+	}
+
+	.innovation__slider .slick-dots {
+		bottom: 5px;
+	}
+
+	.competence__nums {
+		grid-template-columns: repeat(3, 80px);
+		gap: 26px 71px;
+	}
+
+	.competence__num {
+		width: 80px;
+		height: 80px;
+		border: 3px solid #000000;
+
+		h3 {
+			font-size: 12px;
+			margin-top: 10px;
+		}
+
+		p {
+			font-size: 7px;
+			max-width: 60px;
+		}
+	}
+
+	.competence__num:nth-child(3) h3 {
+		font-size: 20px;
+	}
+
+	.competence .competence__laboratory {
+		font-size: 33px;
+		line-height: 40px;
+	}
+
+	.competence .competence__laboratory-desc {
+		font-size: 16px;
+		line-height: 130%;
+	}
+
+	.clients .container.min {
+		padding: 0 7px 0 15px;
+	}
+
+	.clients .clients__desc {
+		font-size: 18px;
+	}
+
+	.clients .container.min.clients__tiles {
+		padding: 0 15px;
+	}
+
+	.clients__block {
+		width: 176px;
+		height: 122px;
+
+		img {
+			max-width: 100%;
+		}
 	}
 
 }

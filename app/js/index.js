@@ -18,7 +18,9 @@ $(document).ready(function(){
 
     $('.about__slider').slick({
         dots: true,
-        arrows: false
+        // arrows: false,
+        nextArrow: `<button class="btn about__arrow-next"> <img src="./img/index/production/next.svg" alt="next"> </button>`,
+        prevArrow: `<button class="btn about__arrow-prev"> <img src="./img/index/production/prev.svg" alt="prev"> </button>`,
     });
 
 });
