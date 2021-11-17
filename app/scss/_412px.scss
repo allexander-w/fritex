@@ -5,6 +5,12 @@
 		background-position: left 103px top,left 5px bottom,left 5px center;
 	}
 
+	.header-section {
+		animation: none;
+		background-size: cover;
+
+	}
+
 	.header-section__heading h1 {
 		font-size: 40px;
 		line-height: 49px;
@@ -75,6 +81,10 @@
 		height: 302px;
 	}
 
+	.complectation__block:not(:first-child):after {
+		height: 302px;
+	}
+
 	.complectation__block:first-child {
 		height: 174px;
 	}
@@ -141,7 +151,24 @@
 		max-width: 322px;
 	}
 
+	.responsibility__block:nth-child(2) p {
+		max-width: 328px;
+	}
+
+	.responsibility__block svg {
+		margin-left: 30px;
+		
+	}
+
+	.responsibility__block:nth-child(1) {
+		background-position: -22px 0;
+	}
+
 	.responsibility__block-quality, .responsibility__block-ecology {
+		height: 449px;
+	}
+
+	.responsibility__block-quality:before, .responsibility__block-ecology:before {
 		height: 449px;
 	}
 

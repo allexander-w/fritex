@@ -59,6 +59,10 @@
 		height: 270px;
 	}
 
+	.complectation__block:not(:first-child):after {
+		height: 270px;
+	}
+
 	.complectation__block p {
 		font-size: 23px;
 		line-height: 28px;
@@ -88,6 +92,25 @@
 	.market__block p {
 		max-width: 280px;
 		top: 270px;
+	}
+
+	.competence__num {
+		width: 144px;
+		height: 144px;
+		border: 6px solid #000;
+
+		h3 {
+			font-size: 22px;
+		}
+
+		p {
+			font-size: 13px;
+			max-width: 115px;
+		}
+	}
+
+	.market__block svg {
+		display: none;
 	}
 
 	.responsibility__blocks {

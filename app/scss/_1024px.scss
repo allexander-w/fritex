@@ -66,6 +66,10 @@
 		height: 289px;
 	}
 
+	.complectation__block:not(:first-child):after {
+		height: 289px;
+	}
+
 	.complectation__blocks {
 		grid-template-columns: repeat(2, 1fr);
 	}
@@ -199,7 +203,7 @@
 		padding: 0;
 	}
 
-	.innovation > .container-min {
+	.innovation > .container-min, .competence>.container-min {
 		max-width: 960px;
 		padding: 0 15px;
 		margin: 0 auto;
