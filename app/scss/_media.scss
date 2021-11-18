@@ -12,10 +12,6 @@
 }
 
 @media (max-width: 1230px) {
-    // .complectation__blocks {
-    //     grid-template-columns: repeat( 1, 1fr );
-    // }
-
     .news__blocks {
         grid-template-columns: repeat(2, 1fr);
     }
@@ -72,7 +68,6 @@
 			display: block;
 			margin: 0 auto;
 		}
-		
 	}
 
 	.main-textarea__self, .main-input__self {

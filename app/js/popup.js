@@ -7,7 +7,7 @@ $(document).ready(function(){
 		$(vm).each(function(){
 			$(this).find($("input, textarea")).each(function() {
 				$(this).parent().removeClass("main-input--validate")
-				if ( !$(this).val() ) {
+				if ( $(this).attr("type") !== "file" && !$(this).val() ) {
 					$(this).parent().addClass("main-input--validate")
 					validation = false
 				}
