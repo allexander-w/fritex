@@ -439,6 +439,10 @@
 		}
 	}
 
+	.popup__choose-file p {
+		padding-left: 0;
+	}
+
     .error__block {
         margin: 90px 15px 60px;
         height: 271px;
@@ -539,7 +543,7 @@
 	}
 
 	.competence__nums {
-		grid-template-columns: repeat(3, 80px);
+		grid-template-columns: repeat(3, 1fr);
 		gap: 26px 71px;
 	}
 

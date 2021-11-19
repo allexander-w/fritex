@@ -47,6 +47,15 @@
 
 
 @import "./1024px";
+
+@media (max-width: 1130px) {
+
+	.competence__nums {
+		gap: 60px 100px;
+	}
+
+}
+
 @import "./768px";
 
 @media (max-width: 500px) {
@@ -79,3 +88,35 @@
 }
 
 @import "./412px";
+
+@media (max-width: 375px) {
+
+	.competence__nums {
+		gap: 26px 52px;
+	}
+
+	.competence .competence__laboratory {
+		font-size: 29px;
+	}
+
+	.about .sidebar-container {
+		max-width: 360px;
+	}
+
+	.sidebar-layout__container {
+		grid-template-columns: 100%;
+	}
+
+	.quality__sertificates, .ecology__sertificates {
+		gap: 30px 15px;
+	}
+
+	.clients__blocks {
+		gap: 15px;
+	}
+
+	.clients__block {
+		width: 166px;
+	}
+
+}
