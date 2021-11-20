@@ -33,6 +33,10 @@
 		margin-bottom: 30px;
 	}
 
+	.about__products-wrapper {
+		flex-direction: row;
+	}
+
 	.header-section__desc {
 		font-size: 20px;
 		line-height: 130%;
@@ -64,6 +68,11 @@
 
 	.complectation__block {
 		height: 289px;
+
+		svg {
+			bottom: 27px;
+			right: 24px;
+		}
 	}
 
 	.complectation__block:not(:first-child):after {

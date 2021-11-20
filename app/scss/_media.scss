@@ -1,3 +1,14 @@
+
+@media (max-width: 1440px) {
+	.responsibility__block p {
+		max-width: 458px;
+	}
+
+	.responsibility__block h4 {
+		margin: 120px 0 24px 78px; 
+	}
+}
+
 @media (max-width: 1400px) {
     .news__block::after {
         width: 389px;
@@ -9,6 +20,36 @@
     .slider-container {
         max-width: 963px;
     }
+}
+
+@media (max-width: 1280px) {
+
+	.slider-container {
+		max-width: 768px;
+	}
+
+	.sidebar-container {
+		max-width: 490px;
+	}
+
+	.about__products-wrapper {
+		flex-direction: column;
+	}
+
+	.about__positions {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.about__history-years {
+		overflow-x: auto;
+	}
+
+	.about__history-content {
+		img {
+			max-width: 100%;
+		}
+	}
+
 }
 
 @media (max-width: 1230px) {
@@ -43,20 +84,91 @@
     .slider-container {
         max-width: 703px;
     }
-}
-
-
-@import "./1024px";
-
-@media (max-width: 1130px) {
 
 	.competence__nums {
 		gap: 60px 100px;
 	}
 
+	.responsibility__block {
+		p, svg, h4 {
+			margin-left: 30px;
+		}
+	}
+}
+
+@import "./1024px";
+
+@media (max-width: 912px) {
+	.responsibility__block:nth-child(2) h4 {
+		margin: 70px 0 60px 97px;
+	}
+
+	.responsibility__block p {
+		max-width: 315px;
+	}
+}
+
+@media (max-width: 897px) {
+	.responsibility__block {
+		p, svg, h4 {
+			margin-left: 50px;
+		}
+
+		&:nth-child(2) h4 {
+			margin: 70px 0 60px 50px;
+		}
+
+		&:nth-child(3) h4 {
+			margin: 70px 0 60px 50px;
+		}
+	}
+
 }
 
 @import "./768px";
+
+@media (max-width: 736px) {
+	.about .sidebar-container {
+		max-width: 98vw;
+		padding-right: 30px;
+	}
+
+	.about__products-wrapper {
+		flex-direction: column;
+	}
+}
+
+@media (max-width: 700px) {
+	.responsibility__block { 
+		padding: 0 30px;
+
+		svg {
+			margin-left: 0;
+		}
+	}
+
+	.responsibility__block:nth-child(2) h4 {
+		margin: 70px 0 60px
+	}
+}
+
+@media (max-width: 600px) {
+	.complectation__blocks {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.market__blocks {
+		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.production__buttons.mobile-version {
+		display: flex;
+	}
+
+	.production__buttons {
+		display: none;
+	}
+}
 
 @media (max-width: 500px) {
     .popup {

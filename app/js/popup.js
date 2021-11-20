@@ -37,6 +37,8 @@ $(document).ready(function(){
 	function close(vm, expandedClass, func) {
 		$(vm).removeClass( expandedClass )
 
+		$("html").css({"overflow-y": "scroll"})
+
 		if ( func ) {
 			func()
 		}
@@ -44,6 +46,8 @@ $(document).ready(function(){
 
 	function open( vm, expandedClass, func, clicked ) {
 		$(vm).addClass( expandedClass )
+
+		$("html").css({"overflow-y": "hidden"})
 
 		if ( func ) {
 			func(clicked)
