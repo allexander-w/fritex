@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+    function getRoute(x, y) {
+        return x > y 
+            ? "slideLeft"
+            : "slideRight"
+    }
+
     const content = {
         "y1910": `<p class="text-20 mb-90 mbm-60 mbxs-30">
                         В 1910-е гг. коллектив завода выступил с инициативой о создании фонда сверхплановых накоплений на развитие химической индустрии страны. В обязательствах завода предусматривалось за счет внедрения новой техники и совершенствования технологии, механизации и автоматизации производственных процессов, улучшения организации труда, повышения культуры производства перевыполнить задание по росту производительности труда, снизить себестоимость выпускаемой продукции, добиться уменьшения непроизводительных расходов. Все это должно было позволить коллективу внести в фонд развития химической индустрии около 250 тысяч рублей. <br><br>
@@ -31,17 +37,26 @@ $(document).ready(function(){
 
     $(".about__history-year").each(function() {
         $(this).click(function(){
-            console.dir($(this).width())
-            let leftOffset = $(this).offset().left - $('.about__history-years').offset().left + $('.about__history-years').scrollLeft()
-    
+            let leftOffset      = $(this).offset().left - $('.about__history-years').offset().left + $('.about__history-years').scrollLeft()
+            let currentPosCaret = parseInt($(".about__history-years-caret").css("left"), 10)
+
+            
+
             $(".about__history-years-caret").css({ left: leftOffset + "px", width: $(this).width() + 16 + "px" })
     
             $(".about__history-year").removeClass("active")
             $(this).addClass("active")
-    
+
+            let routeClass = getRoute(currentPosCaret, leftOffset)
+
+            $(".about__history-content").addClass(routeClass)
             $(".about__history-content").children().remove()
             $(".about__history-content").append(content[$(this).attr("id")])
-    
+
+            setTimeout(() => {
+                $(".about__history-content").removeClass(routeClass)
+            }, 300)
+
         })
     })
 

@@ -26,10 +26,10 @@ const scss = cb => {
 			includePaths: ['./app/scss'],
 			outputStyle: 'compressed'
 		}))
-        .pipe(autoprefixer({
-                cascade: false
-		}))
         .pipe(concat("index.min.css"))
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(dest('./app/css'))
         .pipe(browserSync.reload({ stream: true }))
     
