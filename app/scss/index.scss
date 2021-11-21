@@ -1294,7 +1294,7 @@ p {
 
 .sidebar-layout__container {
   display: grid;
-  grid-template-columns: 385px 1fr;
+  grid-template-columns: 385px minmax(460px, 1fr);
 }
 
 .sidebar-container {
@@ -1545,6 +1545,11 @@ ul.list {
   color: #000000;
 }
 
+.about__products-wrapper {
+  max-width: 770px;
+  justify-content: space-between;
+}
+
 .about__slider {
   position: relative;
 
@@ -1609,11 +1614,6 @@ ul.list {
 }
 
 .about__products {
-
-  &:first-child {
-    margin-right: 220px;
-  }
-
   .about__product {
     width: 303px;
     height: 43px;
@@ -1641,7 +1641,7 @@ ul.list {
   margin-left: 21px;
   display: grid;
   grid-template-columns: repeat( 2, 1fr );
-  grid-gap: 35px 0px;  
+  grid-gap: 35px 20px;  
 }
 
 .about__position {
@@ -1669,10 +1669,14 @@ ul.list {
 .about__position-card { 
   overflow: hidden;
   max-width: 273px;
-  height: 354px;
-  border: 1px solid rgba(5, 46, 126, 0.07);
+  // height: 354px;
+  // border: 1px solid rgba(5, 46, 126, 0.07);
 
   margin-bottom: 25px;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 .about__history-years {
@@ -1990,7 +1994,7 @@ ul.list {
 }
 
 .clients.popup {
-  width: 902px;
+  min-width: 902px;
 }
 
 .footer__left {

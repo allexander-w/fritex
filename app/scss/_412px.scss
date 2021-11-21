@@ -8,7 +8,6 @@
 	.header-section {
 		animation: none;
 		background-size: cover;
-
 	}
 
 	.header-section__heading h1 {
@@ -258,6 +257,14 @@
 
 	.news-index .dropdown:last-child {
 		margin-bottom: 0;
+	}
+
+	.news-all__block:after {
+		width: 176px;
+
+		&:hover {
+			width: 220px
+		}
 	}
 
 	.container {

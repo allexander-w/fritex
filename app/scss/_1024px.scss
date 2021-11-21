@@ -380,7 +380,7 @@
 	}
 
 	.sidebar-layout__container {
-		grid-template-columns: 1fr;
+		grid-template-columns: minmax(320px, 1fr);
 	}
 
 	.sidebar-layout__container.about__sidebar-layout-container {
@@ -394,7 +394,6 @@
 	}
 
 	.about .sidebar-container {
-		max-width: 756px;
 		margin-left: 47px;
 	}
 
@@ -464,20 +463,25 @@
 
 	.about__history-content {
 		margin-left: 8px;
+		margin-right: 15px;
 		margin-bottom: 60px;
 	}
 
 	.about__position-card {
 		margin-bottom: 25px;
+
+		img {
+			width: 100%;
+		}
 	}
 
 	.sidebar {
 		display: none;
 	}
 
-	.sidebar-container {
-		max-width: 970px;
-	}
+	// .sidebar-container {
+	// 	max-width: 970px;
+	// }
 
 	.heading-60 {
 		font-size: 39px;
@@ -590,8 +594,7 @@
 	}
 
 	.sidebar-container {
-		max-width: 756px;
-		margin: 0;
+		margin-left: 0;
 	}
 
 	ul.list li {
@@ -671,6 +674,7 @@
 	.news-all {
 		.sidebar-container {
 			max-width: 772px;
+			margin-left: 0;
 		}
 	}
 
@@ -830,6 +834,7 @@
 
 	.clients.popup {
 		max-width: 610px;
+		min-width: auto;
 		padding: 60px 80px;
 	}
 
