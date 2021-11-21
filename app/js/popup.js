@@ -1,5 +1,40 @@
 $(document).ready(function(){
 
+	linesPosition()
+
+	function linesPosition() {
+		let padding = parseInt($(".header__container").css("paddingLeft"), 10)
+		let width 	= $(".header__container").width() + ( padding * 2 )
+		let bgLeft
+		let lineSize
+
+		if ( width > 960 ) {
+			bgLeft 	 = $(".header__container").offset().left + padding
+			lineSize = (width - (padding*2)) / 6
+		}
+
+		if ( width < 960 || width === 960 && width > 720 ) {
+			bgLeft 	 = $(".header__container").offset().left
+			lineSize = width / 6
+		}
+
+		if ( width < 720 || width === 720 && width > 397 ) {
+			bgLeft 	 = $(".header__container").offset().left
+			lineSize = width / 6
+		}
+
+		if ( width < 397 || width === 397 ) {
+			bgLeft 	 = 103
+			lineSize = 103
+		}
+
+		$("body").css({ "background-size": `${ lineSize }px 100%`, "background-position": `left ${ bgLeft }px top,left 5px bottom,left 5px center` })
+	}
+
+	$(window).on('resize', function(){
+		linesPosition()
+	});
+
 	/* VENDOR functions and helpers */
 
 	function validation(vm) {

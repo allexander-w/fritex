@@ -58,7 +58,6 @@ body {
   height: 100%;
 
   background-color: #fff;
-  // background-size: 257px 100%;
   background-repeat: repeat-x;
   background-image: linear-gradient(to right, #F1F1F1 1px, transparent 1px, transparent),
                     linear-gradient(60deg, transparent 25px, #F1F1F1 25px, transparent 26px, transparent);
@@ -114,6 +113,16 @@ p {
   max-width: 1572px;
   padding: 0 15px;
   margin: 0 auto;
+}
+
+.container.white {
+  a img {
+    margin-left: 15px;
+  }
+
+  nav {
+    margin-right: 15px;
+  }
 }
 
 // .container-min {
@@ -1189,7 +1198,7 @@ p {
 
 .competence__nums {
   display: grid;
-  grid-template-columns: repeat(3, 194px);
+  grid-template-columns: repeat(3, minmax(50px, 194px));
   gap: 60px 173px;
 
   margin-bottom: 90px;

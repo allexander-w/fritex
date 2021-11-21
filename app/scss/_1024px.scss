@@ -199,6 +199,16 @@
 		padding: 0 23px;
 	}
 
+	.container.main-header__container {
+		a img {
+		  margin-left: 0;
+		}
+	  
+		nav {
+		  margin-right: 0;
+		}
+	  }
+
 	.header {
 		.container.white {
 		  padding: 0 15px;
