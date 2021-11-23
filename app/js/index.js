@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+    $(".header-section").addClass("animate")
+
     $('.production__slider').slick({
         dots: true,
         nextArrow: `<button class="btn production__arrow-next"> <img src="./img/index/production/next.svg" alt="next"> </button>`,

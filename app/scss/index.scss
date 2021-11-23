@@ -303,24 +303,15 @@ p {
   background-image: url("../img/index/bg.png");
   background-repeat: no-repeat;
   background-position: center;
-//   animation: grow 12s ease;
 
--webkit-animation-name: grow;
--webkit-animation-duration: 12s;
--webkit-animation-iteration-count: 1;
--webkit-animation-timing-function: ease;
--webkit-animation-fill-mode: forwards;
+  background-size: 150% 150%;
+  transition: all 12s;
 
   min-height: 700px; 
 }
 
-@keyframes grow {
-	0% {
-    	background-size: 130% 130%;
-	}
-	100% {
-    	background-size: 100% 100%;
-	}
+.header-section.animate {
+  background-size: 100% 100%;
 }
 
 .header-section__heading {
@@ -1729,6 +1720,10 @@ ul.list {
 .about__history-content {
   margin-left: 21px;
   margin-bottom: 80px;
+
+  img {
+    margin-left: -21px;
+  }
 }
 
 .about__history-content.slideLeft {
@@ -1949,6 +1944,8 @@ ul.list {
     font-size: 14px;
     line-height: 130%;
     color: #FF0000;
+
+    min-width: 125px;
   }
 }
 
