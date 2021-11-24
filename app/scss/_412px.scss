@@ -6,8 +6,9 @@
 	}
 
 	.header-section {
-		animation: none;
-		background-size: cover;
+		img {
+			transform: scale(1)
+		}
 	}
 
 	.header-section__heading h1 {
