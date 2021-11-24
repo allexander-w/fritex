@@ -170,8 +170,22 @@
 		grid-template-columns: repeat(1, 1fr);
 	}
 
+	.complectation__block:first-child {
+		height: 174px;
+	}
+
 	.market__blocks {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.header-section {
+		img {
+			transform: scale(1)
+		}
+	}
+
+	.production__slider-one .slick-list .slick-track {
+		height: 240px;
 	}
 
 	.production__buttons.mobile-version {
@@ -184,6 +198,61 @@
 
 	.about__positions  {
 		margin-right: 15px;
+	}
+
+	.burger__menu {
+		flex-direction: column;
+	}
+
+	.burger {
+		overflow: auto;
+	}
+
+	.burger__menu-list li {
+		padding-left: 15px;
+	}
+
+	.burger__menu-one > .burger__menu-list li:last-child {
+		margin-bottom: 30px;
+	}
+
+	.burger__menu-two > .burger__menu-list li:last-child {
+		margin-bottom: 30px;
+	}
+
+	.products-detail__files {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-bottom: 0;
+		margin-left: 16px;
+	}
+
+	.products-detail__files a:first-child {
+		margin-bottom: 30px;
+	}
+
+	.products-detail__files a:nth-child(2) {
+		margin-bottom: 60px;
+	}
+
+	.competence__num {
+		width: 80px;
+		height: 80px;
+		border: 3px solid #000;
+
+		h3 {
+			font-size: 12px;
+			margin-top: 10px;
+		}
+
+		p {
+			font-size: 7px;
+			max-width: 60px;
+		}
+	}
+
+	.competence__num:nth-child(3) h3 {
+		font-size: 20px;
 	}
 }
 
@@ -225,7 +294,7 @@
 	}
 
 	.competence .competence__laboratory {
-		font-size: 29px;
+		font-size: 24px;
 	}
 
 	.quality__sertificates, .ecology__sertificates {

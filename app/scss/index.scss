@@ -319,6 +319,7 @@ p {
 
 .header-section.animate {
 	img {
+    min-width: 1600px;
 		transform: scale(1)
 	}
 }
@@ -911,6 +912,7 @@ p {
     font-weight: normal;
     font-size: 20px;
     line-height: 130%;
+    min-width: 154px;
 
     color: #000000;
 
@@ -1395,6 +1397,10 @@ ul.list {
   cursor: pointer;
 
   margin-bottom: 15px;
+
+  p {
+    margin-right: 20px;
+  }
 
   img {
     transition: .3s ease-out;
