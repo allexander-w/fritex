@@ -157,13 +157,16 @@
 	.clients .container.min.clients__tiles {
 		padding: 0 15px 0 40px;
 	}
-
 	
 }
 
 @media (max-width: 600px) {
 	.complectation__blocks {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.about__slider .slick-list .slick-track {
+		height: 280px;
 	}
 
 	.clients__blocks {
@@ -175,6 +178,10 @@
 		img {
 			max-width: 100%;
 		}
+	}
+
+	.popup.clients__popup {
+		height: 90vh;
 	}
 
 	.complectation__block:first-child {
@@ -311,7 +318,7 @@
 
 	.quality__sertificates, .ecology__sertificates {
 		gap: 30px 15px;
-		grid-template-columns: repeat(1, 1fr);
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
 	}
 
 	.clients__blocks {

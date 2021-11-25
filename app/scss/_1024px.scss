@@ -715,6 +715,14 @@
 	.mbm-30 {
 		margin-bottom: 30px;
 	}
+
+	.mbm-10 {
+		margin-bottom: 10px;
+	}
+
+	.mbm-15 {
+		margin-bottom: 15px;
+	}
 	
 	.mbm-20 {
 		margin-bottom: 20px;
@@ -771,9 +779,9 @@
 		padding-left: 8px;
 	}
 
-    .products__market-desc {
-        display: none;
-    }
+    // .products__market-desc {
+    //     display: none;
+    // }
 
     .products__complectation {
         padding: 0 0 60px 0 ;
@@ -847,7 +855,7 @@
 	.clients__popup {
 		max-width: 610px;
 		min-width: auto;
-		padding: 60px 80px;
+		padding: 25px 80px;
 	}
 
 	.clients__products {
