@@ -360,6 +360,14 @@
 		margin-top: 66px;
 	}
 
+	.mbs-10 {
+        margin-bottom: 10px;
+    }
+
+	.mbs-20 {
+        margin-bottom: 20px;
+    }
+
     .mbs-30 {
         margin-bottom: 30px;
     }
@@ -382,9 +390,17 @@
         margin-bottom: 60px;
     }
 
-	.clients.popup {
+	.popup.clients__popup {
 		max-width: 526px;
 		padding: 60px 38px;
+		
+		p, h3 {
+			text-align: left;
+		}
+	}
+
+	.clients__product-item {
+		margin-bottom: 10px;
 	}
 
     .clients .heading-60 {

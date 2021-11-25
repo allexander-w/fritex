@@ -158,16 +158,23 @@
 		padding: 0 15px 0 40px;
 	}
 
-	.clients__blocks {
-		grid-template-columns: repeat(2, 1fr);
-		grid-gap: 30px 20%;
-		justify-items: center;
-	}
+	
 }
 
 @media (max-width: 600px) {
 	.complectation__blocks {
 		grid-template-columns: repeat(1, 1fr);
+	}
+
+	.clients__blocks {
+		grid-template-columns: repeat(2, minmax(100px, 1fr));
+		grid-gap: 30px 40%;
+		
+		justify-items: center;
+	
+		img {
+			max-width: 100%;
+		}
 	}
 
 	.complectation__block:first-child {
@@ -182,6 +189,11 @@
 		img {
 			transform: scale(1)
 		}
+	}
+
+	.clients__block {
+		width: 176px;
+		height: 122px;
 	}
 
 	.production__slider-one .slick-list .slick-track {

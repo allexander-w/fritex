@@ -18,12 +18,12 @@ $(document).ready(function(){
 			lineSize = width / 6
 		}
 
-		if ( width < 720 || width === 720 && width > 397 ) {
+		if ( width < 720 || width === 720 && width > 412 ) {
 			bgLeft 	 = $(".header__container").offset().left
 			lineSize = width / 6
 		}
 
-		if ( width < 397 || width === 397 ) {
+		if ( width < 412 || width === 412 ) {
 			bgLeft 	 = 103
 			lineSize = 103
 		}

@@ -426,9 +426,10 @@
 
     .clients__blocks {
         grid-gap: 30px;
+		grid-template-columns: repeat(2, 1fr);
     }
 
-	.clients.popup {
+	.popup.clients__popup {
 		max-width: 412px;
 		padding: 60px 17px;
 

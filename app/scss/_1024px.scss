@@ -386,7 +386,7 @@
 	}
 
 	.header__burger {
-		display: block;
+		display: flex;
 	}
 
 	.sidebar-layout__container {
@@ -832,7 +832,7 @@
 	}
 
     .clients__blocks {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(3, minmax(100px, 1fr));
         grid-gap: 30px 120px;
     }
 
@@ -844,7 +844,7 @@
         margin-bottom: 60px;
     }
 
-	.clients.popup {
+	.clients__popup {
 		max-width: 610px;
 		min-width: auto;
 		padding: 60px 80px;
