@@ -66,6 +66,25 @@ $(document).ready(function(){
 	const helpers = {
 		vacancy( vm ) {
 			$("#vacancy").val( $(vm).attr("data-vacancy") )
+		},
+
+		client( vm ) {
+			const links = [ ...eval($(vm).attr("data-links")) ]
+			const year 	= $(vm).attr("data-year")
+			const img 	= $(vm).attr("data-img")
+
+			if (!links || !year || !img) return 
+
+			$(".clients__popup img").attr({ src: img })
+			$("#client-year").html(year)
+
+			$(".clients__products").html("")
+			links.forEach(element => {
+				let html = `
+					<li class="clients__product-item"><a href="${ element.link }" class="header-section__product-link"> ${ element.name } </a></li>
+				`
+				$(".clients__products").append(html)
+			});
 		}
 	}
 

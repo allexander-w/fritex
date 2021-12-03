@@ -109,13 +109,12 @@
             <div class="popup__close trigger-close" data-close="popup-wrapper__expanded" data-parent-id="clients-modal"></div>
 
             <div>
-                <p class="text-20 mb-45 mbs-10 mbm-10">Начало сотрудничества: 2004 г.</p>
+                <p class="text-20 mb-45 mbs-10 mbm-10">Начало сотрудничества: <span id="client-year"></span> г.</p>
                 <h3 class="heading-36 mb-30 mbxs-15 mbm-15">Поставляемая продукция</h3>
 
                 <div class="">
                     <ul class="clients__products flex flex-wrap ai-center">
-                        <li class="clients__product-item"><a href="#" class="header-section__product-link">Термозащитные экраны</a></li>
-                        <li class="clients__product-item"><a href="#" class="header-section__product-link">Теплообменники</a></li>
+
                     </ul>
                 </div>
             </div>
@@ -164,18 +163,41 @@
 
         <div class="container min clients__tiles">
             <div class="clients__blocks">
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/1.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/2.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/3.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/4.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/5.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/6.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/7.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/8.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/1.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/2.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/3.png" alt=""> </div>
-                <div data-modal="clients-modal" data-class="popup-wrapper__expanded" class="trigger clients__block"> <img src="./img/clients/4.png" alt=""> </div>
+                <div 
+					data-modal="clients-modal" 
+					data-func="client" 
+					data-img="./img/clients/1.png" 
+					data-year="2000"
+					data-links="[{ link: 'link', name: 'ТЕПЛООБМЕННИКИ' }, { link: 'link', name: 'ЕЩЕ ЧТО-ТО' }]" 
+					data-class="popup-wrapper__expanded" 
+					class="trigger clients__block"
+				> 
+					<img src="./img/clients/1.png" alt=""> 
+				</div>
+
+				<div 
+					data-modal="clients-modal" 
+					data-func="client" 
+					data-img="./img/clients/2.png" 
+					data-year="2012"
+					data-links="[{ link: 'link', name: 'ТЕПЛООБМЕННИКИ' }, { link: 'link', name: 'ФОЛЬЦВАГЕН' }]" 
+					data-class="popup-wrapper__expanded" 
+					class="trigger clients__block"
+				> 
+					<img src="./img/clients/2.png" alt=""> 
+				</div>
+
+				<div 
+					data-modal="clients-modal" 
+					data-func="client" 
+					data-img="./img/clients/3.png" 
+					data-year="1953"
+					data-links="[{ link: 'link', name: 'ТЕПЛООБМЕННИКИ' }, { link: 'link', name: 'ФОРД' }]" 
+					data-class="popup-wrapper__expanded" 
+					class="trigger clients__block"
+				> 
+					<img src="./img/clients/3.png" alt=""> 
+				</div>
             </div>
         </div>
     </section>
