@@ -40,8 +40,6 @@ $(document).ready(function(){
             let leftOffset      = $(this).offset().left - $('.about__history-years').offset().left + $('.about__history-years').scrollLeft()
             let currentPosCaret = parseInt($(".about__history-years-caret").css("left"), 10)
 
-            
-
             $(".about__history-years-caret").css({ left: leftOffset + "px", width: $(this).width() + 16 + "px" })
     
             $(".about__history-year").removeClass("active")
@@ -49,12 +47,13 @@ $(document).ready(function(){
 
             let routeClass = getRoute(currentPosCaret, leftOffset)
 
-            $(".about__history-content").addClass(routeClass)
-            $(".about__history-content").children().remove()
-            $(".about__history-content").append(content[$(this).attr("id")])
+            $(`div[data-content]`).addClass(routeClass)
+            $(`div[data-content]`).children().remove()
+
+            $(`div[data-content]`).append($(`div[data-select="${ $(this).attr('id') }"]`).html())
 
             setTimeout(() => {
-                $(".about__history-content").removeClass(routeClass)
+                $(`div[data-content]`).removeClass(routeClass)
             }, 300)
 
         })

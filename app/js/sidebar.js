@@ -10,8 +10,6 @@ $(document).ready(function(){
 
         $(this).children(".dropdown__header").click( () => {
 
-            console.log( $(this).children(".dropdown__header").children(".dropdown__arrow") )
-
             $(this).children(".dropdown__header").children(".dropdown__arrow").toggleClass("rotated")
             $(this).children(".dropdown__content").slideToggle();
   
