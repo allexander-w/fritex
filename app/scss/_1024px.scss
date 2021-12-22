@@ -545,6 +545,26 @@
         width: 100%;
 	}
 
+	.about__history-content p, .products-detail p {
+		font-size: 18px;
+		line-height: 130%;
+		max-width: 770px;
+
+        width: 100%;
+	}
+
+	.products-detail p {
+		padding-left: 0;
+	}
+
+	.products-detail img {
+		margin: 60px 0;
+	}
+
+	.about__history-content img {
+		margin: 60px 0;
+	}
+
     .text-24 {
         width: 100%;
 	}

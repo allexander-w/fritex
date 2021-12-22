@@ -1124,6 +1124,33 @@ p {
   width: 100%;
 }
 
+.about__history-content p, .products-detail p {
+  max-width: 737px;
+  font-family: SFPro;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 130%;
+  color: #000000;
+
+  width: 100%;
+}
+
+.products-detail p {
+  padding-left: 21px;
+  
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.products-detail img {
+  margin: 45px 0;
+}
+
+.about__history-content img {
+  margin: 90px 0;
+}
+
 .text-24 {
   font-family: SFPro;
   font-weight: normal;
