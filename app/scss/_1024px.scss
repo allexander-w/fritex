@@ -545,6 +545,16 @@
         width: 100%;
 	}
 
+	.text-area {
+		p {
+			font-size: 18px;
+			line-height: 130%;
+			max-width: 770px;
+	
+			width: 100%;
+		}
+	}
+
 	.about__history-content p, .products-detail p {
 		font-size: 18px;
 		line-height: 130%;

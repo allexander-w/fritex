@@ -1124,7 +1124,7 @@ p {
   width: 100%;
 }
 
-.about__history-content p, .products-detail p {
+.about__history-content p, .products-detail p, .innovation p {
   max-width: 737px;
   font-family: SFPro;
   font-weight: normal;
@@ -1135,6 +1135,27 @@ p {
   width: 100%;
 }
 
+.news-detail__content {
+  p {
+    max-width: 737px;
+    font-family: SFPro;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  img {
+    margin: 60px 0;
+  }
+}
+
 .products-detail p {
   padding-left: 21px;
   
@@ -1143,8 +1164,41 @@ p {
   }
 }
 
+.innovation p {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+
+.innovation .innovation__textblock {
+  margin-bottom: 60px;
+}
+
 .products-detail img {
   margin: 45px 0;
+}
+
+.text-area {
+  p {
+    max-width: 737px;
+    font-family: SFPro;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    color: #000000;
+
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.text-area.text-area__max {
+  p {
+    max-width: 100%;
+  }
 }
 
 .about__history-content img {
@@ -1304,6 +1358,14 @@ p {
 .news-detail.news-ident {
   p {
     padding-left: 21px;
+  }
+
+  .news-index__date {
+    font-family: SFPro;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000;
   }
 
   h1 {
@@ -1657,12 +1719,13 @@ ul.list {
 
 .about__products {
   .about__product {
-    width: 303px;
+    min-width: 303px;
     height: 43px;
     display: flex;
     align-items: center;
     transition: .3s ease;
     padding-left: 21px;
+    padding-right: 21px;
     margin-bottom: 9px;
 
     a {
@@ -2043,7 +2106,7 @@ ul.list {
 
 .clients__popup {
 	min-width: 902px;
-	height: 375px;
+	height: 505px;
 }
 
 .footer__left {
