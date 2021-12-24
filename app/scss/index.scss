@@ -654,6 +654,35 @@ p {
   }
 }
 
+.production__slide div{
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.news__block-img {
+  height: 306px;
+  background-size: cover;
+  margin-bottom: 15px;
+}
+
+.about__slide div {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.news-all__block-img {
+  height: 333px;
+  background-size: cover;
+}
+
+.news-detail__block-img {
+  height: 450px;
+  background-size: cover;
+  margin: 32px 0;
+}
+
 .production__slider {
   position: relative;
 
