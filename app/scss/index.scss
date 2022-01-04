@@ -655,7 +655,7 @@ p {
 }
 
 .production__slide div{
-  background-size: cover;
+  background-size: 150%;
   background-repeat: no-repeat;
   height: 700px;
 }
@@ -1619,6 +1619,8 @@ ul.list {
   }
 }
 
+
+
 .products-detail__file-name {
   max-width: 210px;
 }
@@ -2162,15 +2164,15 @@ ul.list {
 	}
 }
 
-// .header__burger:after, .header__burger:before{
-//     content: '';
-// }
-// .header__burger:after{
-//     bottom: 8px;
-// }
-// .header__burger:before{
-//     top: 16px;
-// }
+.products-detail .products-detail__file {
+  img {
+    margin: 0 27px 0 0;
+  }
+}
+
+.ecology .list, .quality .list {
+  padding-right: 21px;
+}
 
 .burger {
 	display: none;

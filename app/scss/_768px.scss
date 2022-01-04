@@ -239,6 +239,15 @@
 	.news {
 		margin-bottom: 77px;
 	}
+	
+	.news__block-img {
+		height: 196px;
+	}
+
+	.news-all__block-img {
+		min-height: 200px;
+		max-height: 333px;
+	}
 
 	.news__blocks {
 		grid-template-rows: 1fr;
