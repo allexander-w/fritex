@@ -681,6 +681,8 @@ p {
 
 .news-detail__block-img {
   height: 450px;
+  background-size: 100%;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 32px 0;
 }
