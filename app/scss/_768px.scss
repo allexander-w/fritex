@@ -244,11 +244,6 @@
 		height: 196px;
 	}
 
-	.news-all__block-img {
-		min-height: 200px;
-		max-height: 333px;
-	}
-
 	.news__blocks {
 		grid-template-rows: 1fr;
 		min-width: 100%;
@@ -256,7 +251,7 @@
 
 		grid-auto-flow: column;
 		grid-auto-rows: 1fr;
-		gap: 30px;
+		gap: 10px;
 	}
 
 	.news__block {
